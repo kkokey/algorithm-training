@@ -24,17 +24,17 @@ describe('Tourist Translation', function () {
         expect(translationData).toBe('Hi');
     });
 
-    test('should match', function () {
+    test('should match word', function () {
         const translationData = touristTranslation.translator(permutation, 'Pcssi');
         expect(translationData).toBe('Hello');
     });
 
-    test('should match', function () {
+    test('should match five word ', function () {
         const translationData = touristTranslation.translator(permutation, 'Bpke_kdc_epclc_jcijsc_mihyo?');
         expect(translationData).toBe('What are these people doing?');
     });
 
-    test('should match', function () {
+    test('should match sentence', function () {
         const translationData = touristTranslation.translator(permutation, 'Epcf_kdc_liswhyo_EIED_hy_Vimcvpcn_Zkdvp_siyo_viyecle.');
         expect(translationData).toBe('They are solving TOTR in Codechef March long contest.');
     });
